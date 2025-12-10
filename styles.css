@@ -1,0 +1,248 @@
+/* /exam-trainer/styles.css */
+/* 문제 풀이 페이지 레이아웃 및 스타일 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #f5f4ef;
+  color: #222;
+  font-size: 16px;
+}
+
+.app-container {
+  max-width: 1040px;
+  margin: 48px auto;
+  padding: 0 28px 56px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.app-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.app-header .subtitle {
+  font-size: 16px;
+  color: #777;
+}
+
+.controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 22px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #e3ddcf;
+  margin-bottom: 28px;
+}
+
+.select-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.select-group label {
+  font-weight: 500;
+}
+
+#exam-select {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #d0c8b6;
+  background: #faf8f4;
+  font-size: 15px;
+}
+
+.status-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  color: #555;
+}
+
+.ghost-button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #c0b49d;
+  background: transparent;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.ghost-button:hover {
+  background: #e5dccb;
+}
+
+.question-area {
+  margin-top: 18px;
+}
+
+.question-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 26px 26px 22px;
+  border: 1px solid #e3ddcf;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+}
+
+.question-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.question-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: #efe8d8;
+  color: #6a5c44;
+  flex-shrink: 0;
+}
+
+#question-title {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.options-list {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.option-item {
+  border-radius: 14px;
+  border: 1px solid #e0d7c7;
+  padding: 12px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #faf8f4;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: border 0.12s ease, background 0.12s ease;
+}
+
+.option-item:hover {
+  border-color: #c2b293;
+}
+
+.option-item input[type="radio"] {
+  margin-top: 4px;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.option-label-text {
+  font-size: 16px;
+}
+
+.option-item.selected {
+  border-color: #a57b3f;
+  background: #f1e4d0;
+}
+
+.option-item.correct {
+  border-color: #2f8f3a;
+  background: #e2f4e4;
+}
+
+.option-item.incorrect {
+  border-color: #c84a3f;
+  background: #f9e1dd;
+}
+
+.actions-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.15s ease, transform 0.05s ease, opacity 0.15s ease;
+}
+
+.primary-button {
+  background: #a77a44;
+  color: #fff;
+}
+
+.primary-button:hover {
+  background: #936838;
+}
+
+.primary-button:active,
+.secondary-button:active {
+  transform: translateY(1px);
+}
+
+.secondary-button {
+  background: #ece3d4;
+  color: #544631;
+}
+
+.secondary-button:disabled,
+.primary-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.feedback-box {
+  border-radius: 14px;
+  background: #f7f3ea;
+  padding: 12px 14px;
+  border: 1px solid #e0d7c7;
+  font-size: 14px;
+}
+
+.feedback-box.hidden {
+  display: none;
+}
+
+.feedback-result {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.feedback-result.correct {
+  color: #28773c;
+}
+
+.feedback-result.incorrect {
+  color: #c53a30;
+}
+
+.feedback-explanation {
+  color: #444;
+  line-height: 1.6;
+  white-space: pre-line;
+  font-size: 14px;
+}

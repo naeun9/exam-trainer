@@ -1,0 +1,63 @@
+<!-- /exam-trainer/index.html -->
+<!-- 단일 페이지 문제 풀이 UI -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>기말 대비 문제 풀이</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>기말 대비 문제 풀이</h1>
+    </header>
+
+    <section class="controls-bar">
+      <div class="select-group">
+        <label for="exam-select">문제집 선택</label>
+        <select id="exam-select">
+          <option value="set1">실전 문제집 1</option>
+          <option value="set2">실전 문제집 2</option>
+          <option value="set3">실전 문제집 3</option>
+          <option value="set4">실전 문제집 4</option>
+          <option value="set5">실전 문제집 5</option>
+        </select>
+      </div>
+
+      <div class="status-group">
+        <span id="question-counter">0 / 0</span>
+        <span id="score-info">정답 0개</span>
+      </div>
+
+      <button id="reset-btn" class="ghost-button">처음부터</button>
+    </section>
+
+    <main class="question-area">
+      <article class="question-card">
+        <div class="question-header">
+          <span id="question-tag" class="question-tag">-</span>
+          <h2 id="question-title">문제를 불러오는 중입니다.</h2>
+        </div>
+
+        <ul id="options-list" class="options-list">
+          <!-- 선택지 동적 렌더링 -->
+        </ul>
+
+        <div class="actions-row">
+          <button id="check-btn" class="primary-button">정답 확인</button>
+          <button id="next-btn" class="secondary-button" disabled>다음 문제</button>
+        </div>
+
+        <div id="feedback-box" class="feedback-box hidden">
+          <p id="feedback-result" class="feedback-result"></p>
+          <p id="feedback-explanation" class="feedback-explanation"></p>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
