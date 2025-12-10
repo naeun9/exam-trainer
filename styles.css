@@ -248,19 +248,21 @@ body {
 }
 
 @media (max-width: 600px) {
+  html,
   body {
+    font-size: 16px;
     background: #f5f2ea;
   }
 
   .app-shell {
-    padding: 8px;
+    padding: 10px;
   }
 
   .quiz-container {
     max-width: 100%;
     width: 100%;
     margin: 0;
-    padding: 14px 12px 18px;
+    padding: 20px 16px 28px;
     border-radius: 0;
     box-shadow: none;
     min-height: 100vh;
@@ -269,15 +271,15 @@ body {
   .quiz-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 6px;
+    gap: 8px;
   }
 
   .app-title {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .app-subtitle {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .set-select,
@@ -286,59 +288,61 @@ body {
   }
 
   .set-select select {
-    font-size: 14px;
-    padding: 8px 10px;
+    font-size: 15px;
+    padding: 10px 12px;
   }
 
   .status-bar {
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
-    font-size: 13px;
+    gap: 6px;
+    font-size: 14px;
   }
 
   .status-bar .pill {
-    padding: 4px 8px;
-    font-size: 12px;
-  }
-
-  .question-card {
-    padding: 12px;
-    border-radius: 14px;
-  }
-
-  .question-stem {
-    font-size: 15px;
-    line-height: 1.4;
-  }
-
-  .options-list {
-    gap: 8px;
-  }
-
-  .option-btn {
-    padding: 10px 12px;
-    font-size: 14px;
-    border-radius: 12px;
-    text-align: left;
-  }
-
-  .option-index {
-    min-width: 20px;
-    height: 20px;
-    font-size: 12px;
-  }
-
-  .explanation-box {
-    margin-top: 10px;
-    padding: 10px 12px;
+    padding: 6px 10px;
     font-size: 13px;
   }
 
-  .nav-row {
+  .question-card {
+    padding: 16px 14px;
+    border-radius: 16px;
+  }
+
+  .question-stem {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .options-list {
+    gap: 10px;
+  }
+
+  .option-btn {
+    padding: 14px 16px;
+    font-size: 16px;
+    border-radius: 14px;
+    text-align: left;
+    min-height: 48px;
+  }
+
+  .option-index {
+    min-width: 24px;
+    height: 24px;
+    font-size: 13px;
+  }
+
+  .explanation-box {
     margin-top: 12px;
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .nav-row {
+    margin-top: 16px;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
   }
 
   .nav-row .left-group,
@@ -349,8 +353,8 @@ body {
 
   .nav-btn {
     flex: 1;
-    min-height: 40px;
-    font-size: 14px;
+    min-height: 46px; 
+    font-size: 15px;
   }
 
   .nav-btn + .nav-btn {
@@ -358,8 +362,8 @@ body {
   }
 
   .footer-text {
-    margin-top: 10px;
-    font-size: 11px;
+    margin-top: 12px;
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -373,13 +377,5 @@ body {
   .app-title {
     font-size: 24px;
   }
-
-  .question-stem {
-    font-size: 17px;
-  }
-
-  .option-btn {
-    font-size: 15px;
-    padding: 12px 16px;
-  }
 }
+
