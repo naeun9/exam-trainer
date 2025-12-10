@@ -247,126 +247,86 @@ body {
   font-size: 14px;
 }
 
-/* 모바일 전용 – 가로 폭 좁게, 글자/버튼 크게 */
 @media (max-width: 600px) {
-  html,
   body {
-    font-size: 18px;                /* 전체 기본 글자 크기 ↑ */
-    background: #f5f2ea;
-  }
-
-  .app-shell {
-    padding: 8px 0;                 /* 좌우 여백 줄이고 위아래만 */
-    justify-content: center;
-  }
-
-  .quiz-container {
-    width: 100%;
-    max-width: 420px;               /* 가로 폭 줄이기 */
-    margin: 0 auto;
-    padding: 24px 18px 36px;        /* 세로 여백 늘리기 */
-    min-height: 100vh;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .quiz-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .app-title {
-    font-size: 22px;
-  }
-
-  .app-subtitle {
     font-size: 15px;
+    background: #f5f4ef;
   }
 
-  .set-select,
-  .set-select select {
-    width: 100%;
+  .app-container {
+    margin: 16px auto 32px;
+    padding: 0 14px 32px;
   }
 
-  .set-select select {
-    font-size: 16px;
-    padding: 12px 14px;
-  }
-
-  .status-bar {
+  /* 헤더 영역 전체를 세로로 쌓고 간격/폰트 축소 */
+  .controls-bar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 8px;
-    font-size: 15px;
+    padding: 10px 12px;
+    margin-bottom: 18px;
   }
 
-  .status-bar .pill {
-    padding: 7px 12px;
+  .select-group {
+    width: 100%;
+    justify-content: space-between;
     font-size: 14px;
   }
+
+  .select-group label {
+    font-size: 14px;
+  }
+
+  #exam-select {
+    flex: 1;
+    min-width: 0;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .status-group {
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    column-gap: 8px;
+    font-size: 14px;
+  }
+
+  .status-group span {
+    flex: 1 1 calc(50% - 8px); /* 2열로 내려가며 줄바꿈 */
+  }
+
+  .ghost-button {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  /* 아래부터는 문제 카드 / 보기 살짝만 조정 */
 
   .question-card {
-    padding: 20px 16px;
-    border-radius: 18px;
-  }
-
-  .question-stem {
-    font-size: 19px;                /* 문제 지문 크게 */
-    line-height: 1.7;
-  }
-
-  .options-list {
-    margin-top: 14px;
-    gap: 12px;
-  }
-
-  .option-btn {
-    padding: 16px 16px;             /* 버튼 세로 길이 ↑ */
-    font-size: 17px;                /* 보기 글자 크게 */
+    padding: 18px 14px 16px;
     border-radius: 16px;
-    text-align: left;
-    min-height: 54px;               /* 손가락 터치 넉넉하게 */
-    width: 100%;
   }
 
-  .option-index {
-    min-width: 26px;
-    height: 26px;
-    font-size: 14px;
-  }
-
-  .explanation-box {
-    margin-top: 14px;
-    padding: 14px 16px;
-    font-size: 15px;
+  #question-title {
+    font-size: 17px;
     line-height: 1.6;
   }
 
-  .nav-row {
-    margin-top: 20px;
-    flex-direction: column;
-    gap: 10px;
+  .option-item {
+    padding: 12px 12px;
   }
 
-  .nav-row .left-group,
-  .nav-row .right-group {
-    width: 100%;
-    justify-content: space-between;
-    gap: 10px;
+  .option-label-text {
+    font-size: 15px;
   }
 
-  .nav-btn {
-    flex: 1;
-    min-height: 50px;               /* 이전/다음/채점 버튼도 크게 */
-    font-size: 16px;
-  }
-
-  .footer-text {
-    margin-top: 14px;
-    font-size: 13px;
-    text-align: center;
+  .feedback-box {
+    font-size: 14px;
   }
 }
+
 
 
