@@ -246,3 +246,140 @@ body {
   white-space: pre-line;
   font-size: 14px;
 }
+
+@media (max-width: 600px) {
+  body {
+    background: #f5f2ea;
+  }
+
+  .app-shell {
+    padding: 8px;
+  }
+
+  .quiz-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 14px 12px 18px;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 100vh;
+  }
+
+  .quiz-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .app-title {
+    font-size: 18px;
+  }
+
+  .app-subtitle {
+    font-size: 13px;
+  }
+
+  .set-select,
+  .set-select select {
+    width: 100%;
+  }
+
+  .set-select select {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .status-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 13px;
+  }
+
+  .status-bar .pill {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .question-card {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .question-stem {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .options-list {
+    gap: 8px;
+  }
+
+  .option-btn {
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    text-align: left;
+  }
+
+  .option-index {
+    min-width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .explanation-box {
+    margin-top: 10px;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .nav-row {
+    margin-top: 12px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-row .left-group,
+  .nav-row .right-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-btn {
+    flex: 1;
+    min-height: 40px;
+    font-size: 14px;
+  }
+
+  .nav-btn + .nav-btn {
+    margin-left: 8px;
+  }
+
+  .footer-text {
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .quiz-container {
+    max-width: 960px;
+    padding: 24px 28px 26px;
+  }
+
+  .app-title {
+    font-size: 24px;
+  }
+
+  .question-stem {
+    font-size: 17px;
+  }
+
+  .option-btn {
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+}
